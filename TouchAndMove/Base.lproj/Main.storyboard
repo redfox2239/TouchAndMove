@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Dd3-DA-lOS">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TouchAndMove" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="smile" translatesAutoresizingMaskIntoConstraints="NO" id="WZC-gh-MXc">
+                                <rect key="frame" x="137" y="283" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="CBh-8c-dDy"/>
+                                    <constraint firstAttribute="width" constant="100" id="hMj-Ey-5AU"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="タッチしてね" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9O3-bh-lMF">
+                                <rect key="frame" x="135" y="223" width="104" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="9O3-bh-lMF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="AWS-po-hwO"/>
+                            <constraint firstItem="9O3-bh-lMF" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-100" id="RlH-Bo-2iM"/>
+                            <constraint firstItem="WZC-gh-MXc" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="g5K-74-uF2"/>
+                            <constraint firstItem="WZC-gh-MXc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qwg-IY-sHy"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="vxz-hj-pHV">
+                        <barButtonItem key="rightBarButtonItem" title="動かす" id="nyi-7L-aNI">
+                            <connections>
+                                <segue destination="MKr-gS-Y6H" kind="show" id="jI3-uE-4Xa"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="犬の画像" destination="WZC-gh-MXc" id="z2o-Qk-xxg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="375.19999999999999" y="33.733133433283363"/>
+        </scene>
+        <!--Move Dog View Controller-->
+        <scene sceneID="WWZ-lc-LBj">
+            <objects>
+                <viewController id="MKr-gS-Y6H" customClass="MoveDogViewController" customModule="TouchAndMove" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5W0-lF-0xs">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="smile" translatesAutoresizingMaskIntoConstraints="NO" id="mx1-0C-9Rx">
+                                <rect key="frame" x="137" y="283" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="Aov-57-nEQ"/>
+                                    <constraint firstAttribute="width" constant="100" id="Ulc-cN-2AV"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="タッチANDGO" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tIa-yW-oHM">
+                                <rect key="frame" x="131" y="243" width="113" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="mx1-0C-9Rx" firstAttribute="centerX" secondItem="5W0-lF-0xs" secondAttribute="centerX" id="Cbb-8N-hlh"/>
+                            <constraint firstItem="mx1-0C-9Rx" firstAttribute="centerY" secondItem="5W0-lF-0xs" secondAttribute="centerY" id="kYN-FT-qlH"/>
+                            <constraint firstItem="tIa-yW-oHM" firstAttribute="centerX" secondItem="5W0-lF-0xs" secondAttribute="centerX" id="thK-Y6-A13"/>
+                            <constraint firstItem="tIa-yW-oHM" firstAttribute="centerY" secondItem="5W0-lF-0xs" secondAttribute="centerY" constant="-80" id="x05-i2-pdX"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="eyh-cV-7cy"/>
+                    </view>
+                    <connections>
+                        <outlet property="犬の画像" destination="mx1-0C-9Rx" id="O4B-B3-YfH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vl3-lL-qVi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1202" y="34"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="dIb-QR-WnK">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Dd3-DA-lOS" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="nlz-Bv-2Ky">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Jpo-9Q-JXr"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TMf-gV-9oQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-537" y="34"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="smile" width="300" height="248"/>
+    </resources>
+</document>
